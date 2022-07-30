@@ -1,0 +1,14 @@
+{
+  "name": "@monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Rob Sturcke <rob.emil.sturcke@gmail.com> (https://robsturcke.dev/)",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ]
+}

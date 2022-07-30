@@ -1,0 +1,31 @@
+{
+  "name": "@monorepo/utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "Rob Sturcke <rob.emil.sturcke@gmail.com> (https://robsturcke.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

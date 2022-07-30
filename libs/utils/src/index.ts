@@ -1,0 +1,1 @@
+export const copyright = 'robsturcke.dev'
