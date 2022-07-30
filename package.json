@@ -3,12 +3,20 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "concurrently \"npm:dev:utils\" \"npm:dev:blog\" \"npm:dev:dashboard\"",
+    "dev:utils": "npm run dev -w @monorepo/utils",
+    "dev:blog": "npm run dev -w @monorepo/blog",
+    "dev:dashboard": "npm run dev -w @monorepo/dashboard"
+  },
   "keywords": [],
   "author": "Rob Sturcke <rob.emil.sturcke@gmail.com> (https://robsturcke.dev/)",
   "license": "MIT",
   "workspaces": [
     "apps/*",
     "libs/*"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
 }
